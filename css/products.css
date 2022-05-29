@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150vh;
+  height: 160vh;
   background-color: transparent;
+  padding-top: 70vh;
 }
 
 .ctn-cake-bar{
@@ -43,196 +44,84 @@
   object-fit: cover;
 }
 
-
-
-
-.ctn-img-prod1{
-  width: 28vw; 
-  height: 60vh;
-  background-image: url(../assets/img/image1.jpg);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}  
-.ctn-img-prod2{
-  width: 28vw; 
-  height: 60vh;
-  background-image: url(../assets/img/image2.jpg);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ctn-img-prod3{
-  width: 28vw; 
-  height: 60vh;
-  background-image: url(../assets/img/image3.jpg);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}  
-.txt-prod{
-  font-family: var(--font-oswald); 
-  font-size: 2.8vw;
-  font-weight: 500;
-  color: var(--color-white);
-  text-align: center; 
-}
-.prod-link{
-  text-decoration: none;
-}
-
-.ctn-sobre-loja{
-  padding-top: 20vh;
-  width: 40%;
-  height: 50vh;
+/* Cakes - Carrossel  */
+.ctn-images-cakes{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4vh;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  background-color: transparent;
+  padding-top: 5vh;
+}
+.txt-instagram {
+  color: var(--color-brown);
+  font-family: var(--font-raleway);
   text-align: center;
-  line-height: 3vh;
-  margin: 0 auto;
+  font-weight: 600;
+  font-size: 22px;
 }
-#h1-mini-oceano{
-  font-family: var(--font-oswald); 
-  color: var(--color-orange);
-  font-size: 3vw;
-  letter-spacing:0.05vw;
+#ctn-images{
+  width: 90vw;
+  height: 28vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5vh;
 }
-#h4-sobre-loja{
-  padding-top: 3vh;
-  font-family: var(--font-raleway); 
-  color: #000769;
-  font-size: 1.1vw;
-  font-weight: 400;
+.image{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  object-fit: cover;
 }
-#txt-sobre-loja{
-  font-family: var(--font-raleway); 
-  color: #000769;
-  font-weight: 300;
-  font-size: 0.9vw;
+
+/* email  */
+.ctn-email{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  background-color: transparent;
+  padding-top: 20vh;
+  gap: 2vh
 }
-.ctn-btn-leia-mais{
-  padding: 2vh 0 0 0;
-  align-self: center;
+.txt-sign {
+  color: var(--color-brown);
+  font-family: var(--font-raleway);
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
 }
-#btn-leia-mais{
+
+.input-email{
+  font-family: var(--font-raleway);
+  background-color: var(--color-white);
+  width: 25vw;
+  height: 8vh;
+  color: var(--color-brown);
+  font-size: 1.2vw;
+  padding: 1vh 1vw;
+  border: solid 1px var(--color-brown);
+}
+#btn-sign{
   text-decoration: none;
 }
-#divlink-leia-mais{
+#divlink-sign{
   font-family: var(--font-raleway);
-  background-color: var(--color-orange);
-  width: 7vw;
-  height: 4vh;
-  color: #191919;
+  background-color: var(--color-brown);
+  width: 25vw;
+  height: 5vh;
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vw;
+  font-size: 1.2vw;
   border: none;
 }
-#divlink-leia-mais:hover{
-  background-color: #00076980;
-  color: var(--color-white);
-}
-
-.txt-prod11, .txt-prod12, .txt-prod21, .txt-prod22, .txt-prod31, .txt-prod32{
-  font-family: var(--font-oswald); 
-  font-size: 2.8vw;
-  font-weight: 500;
-  color: var(--color-white);
-  text-align: center; 
-}
-.txt-prod11::after {
-    content: attr(data-text11);
-    animation: fader 5s linear;
-}
-.txt-prod12::after {
-    content: attr(data-text12);
-    animation: fader 5s linear;
-}
-.txt-prod21::after {
-  content: attr(data-text21);
-  animation: fader 5s linear;
-}
-.txt-prod22::after {
-  content: attr(data-text22);
-  animation: fader 5s linear;
-}
-.txt-prod31::after {
-  content: attr(data-text31);
-  animation: fader 5s linear;
-}
-.txt-prod32::after {
-  content: attr(data-text32);
-  animation: fader 5s linear;
-}
-.h1-mini-oceano::after {
-  content: attr(data-text-h1);
-  animation: fader1 8s linear;
-  font-family: var(--font-oswald); 
-  color: var(--color-orange);
-  font-size: 3vw;
-  letter-spacing:0.05vw;
-}
-.h4-sobre-loja::after {
-  content: attr(data-text-h4);
-  animation: fader1 8s linear;
-  padding-top: 3vh;
-  font-family: var(--font-raleway); 
-  color: #000769;
-  font-size: 1.1vw;
-  font-weight: 400;
-}
-.txt-sobre-loja::after {
-  content: attr(data-text-p);
-  animation: fader1 8s linear;
-  font-family: var(--font-raleway); 
-  color: #000769;
-  font-weight: 300;
-  font-size: 0.9vw;
-}
-@keyframes fader {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fader1 {
-  0% {
-      opacity: 0;
-  }
-  40% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-  90% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 1;
-  }
+#divlink-sign:hover{
+  background-color: var(--color-pink);
+  color: var(--color-brown);
 }
