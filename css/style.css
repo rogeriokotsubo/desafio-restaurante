@@ -43,6 +43,7 @@ nav .navbar .links{
   align-items: center;
   width: 40vw;
   justify-content: center;
+  gap: 5vw;
 }
 nav .navbar .links li{
   position: relative;
@@ -64,14 +65,14 @@ nav .navbar .links li a{
 }
 
 nav .navbar .links li a:hover{
-  color: var(--color-orange);
+  color: #998d8f;
 }
 
 #social-media-icons{
   list-style-type: none;
   display: flex;
   justify-content: right;
-  gap: 1vw;
+  gap: 2vw;
   width: 15vw;
   align-self: center;
 }
