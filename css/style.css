@@ -1,11 +1,11 @@
 nav{
-  /* position: fixed; */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh;
+  height: 90px;
   background: var(--color-white);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
   display: flex;
   justify-content: center;
   z-index: 99;
@@ -13,17 +13,15 @@ nav{
 nav .navbar{
   height: 100%;
   max-width: 1250px;
-  width: 50vw;
+  width: 90vw;
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
-  /* margin: auto;
-  padding: 0 50px; */
 }
 .navbar .logo{
   display: flex;
   align-items: center;
-  width: 25vw;
+  width: 15vw;
   fill:#292325;
 }
 .navbar .logo a{
@@ -32,16 +30,17 @@ nav .navbar{
   text-decoration: none;
   font-weight: 400;
   font-family: var(--font-raleway);
+  padding-left: 20px;
 }
 nav .navbar .nav-links{
-  line-height: 152px; 
+  line-height: 90px; 
   height: 100%;
 }
 nav .navbar .links{
   display: flex;
   align-items: center;
-  width: 50vw;
-  justify-content: end;
+  width: 40vw;
+  justify-content: center;
 }
 nav .navbar .links li{
   position: relative;
@@ -68,9 +67,10 @@ nav .navbar .links li a:hover{
 #social-media-icons{
   list-style-type: none;
   display: flex;
-  gap: 0.6vw;
+  justify-content: right;
+  gap: 1vw;
   width: 15vw;
-  justify-content: center;
+  align-self: center;
 }
 .img-med{
   width: 20px;
@@ -83,7 +83,7 @@ nav .navbar .links li a:hover{
   align-items: center;
 }
 .LCo0H{
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 70px ;
 }
 .navbar .nav-links .sidebar-logo{
@@ -92,6 +92,20 @@ nav .navbar .links li a:hover{
 .navbar .bx-menu{
   display: none;
 }
+.ctn-nav-separator{
+  width: 100%;
+  height: 3px;
+  position: fixed; 
+  top: 90px;
+  display: flex;
+  justify-content: center;
+}
+#nav-separator{
+  background-color: var(--color-brown); 
+  height: 3px;
+  width: 90vw;
+  position: relative;
+}
 @media (max-width:920px) {
   nav .navbar{
     max-width: 100%;
@@ -99,7 +113,7 @@ nav .navbar .links li a:hover{
   }
 
   nav .navbar .logo a{
-    font-size: 27px;
+    font-size: 15px;
   }
   nav .navbar .links li{
     padding: 0 10px;
@@ -110,9 +124,9 @@ nav .navbar .links li a:hover{
   }
 }
 @media (max-width:800px){
-  nav{
+  /* nav{ */
     /* position: relative; */
-  }
+  /* } */
   .navbar .bx-menu{
     display: block;
   }
@@ -138,7 +152,7 @@ nav .navbar .links li a:hover{
   .sidebar-logo .logo-name{
     font-size: 25px;
     color: #fff;
-    font-family: var(--font-oswald);
+    font-family: var(--font-raleway);
   }
     .sidebar-logo  i,
     .navbar .bx-menu{
@@ -155,6 +169,20 @@ nav .navbar .links li a:hover{
   nav .navbar .links li{
       display: block;
     }
+  nav .navbar .links li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }    
+  nav .navbar .links li .sub-menu li{
+    border-bottom: none;
+  }
+.navbar .nav-links.show1 .links,
+ .navbar .nav-links.show3 .links {
+    display: block;
+  }    
+}  
 @media (max-width:370px){
   nav .navbar .nav-links{
   max-width: 100%;
