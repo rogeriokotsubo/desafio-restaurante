@@ -96,6 +96,7 @@ nav .navbar .links li a:hover{
 .navbar .bx-menu{
   height: 25px;
   display: none;
+  cursor: pointer;
 }
 
 .ctn-nav-separator{
