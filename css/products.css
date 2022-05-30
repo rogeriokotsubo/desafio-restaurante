@@ -1,3 +1,5 @@
+
+/* Lia and donuts container  */
 .ctn-cakes{
   display: flex;
   flex-direction: column;
@@ -8,7 +10,6 @@
   background-color: transparent;
   padding-top: 70vh;
 }
-
 .ctn-cake-bar{
   background-image: url(../assets/img/fundo1.png);
   background-size: contain;
@@ -47,10 +48,7 @@
   background-position: center;
   background-image: url("../assets/img/lia.webp");
 }
-
 /* Conheça a Lia */
-.cakes-image1{
-}
 #btn-lia{
   text-decoration: none;
 }
@@ -134,13 +132,85 @@
   justify-content: space-between;
   padding-top: 5vh;
 }
-.image{
+.image1{
   width: 11vw;
   height: 17vh;
   overflow: hidden;
-  object-fit: cover;
+  background-image: url(../assets/img/01.jpg);
+  background-size: cover;
 }
-/* email  */
+.image2{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/02.jpg);
+  background-size: cover;
+}
+.image3{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/03.jpg);
+  background-size: cover;
+}
+.image4{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/04.jpg);
+  background-size: cover;
+}
+.image5{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/05.jpg);
+  background-size: cover;
+}
+.image6{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/06.jpg);
+  background-size: cover;
+}
+.image7{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/07.jpg);
+  background-size: cover;
+}
+.image8{
+  width: 11vw;
+  height: 17vh;
+  overflow: hidden;
+  background-image: url(../assets/img/08.jpg);
+  background-size: cover;
+}
+.txt-hover1, .txt-hover2, .txt-hover3, .txt-hover4,
+ .txt-hover5, .txt-hover6, .txt-hover7, .txt-hover8{
+  width: 11vw;
+  height: 17vh;
+  background-color: #29232580;
+  color: var(--color-white);
+  font-family: var(--font-raleway);
+  font-size: 1.3vw;
+  text-align: center;
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.image1:hover .txt-hover1, .image2:hover .txt-hover2,
+.image3:hover .txt-hover3, .image4:hover .txt-hover4,
+.image5:hover .txt-hover5, .image6:hover .txt-hover6,
+.image7:hover .txt-hover7, .image8:hover .txt-hover8{
+  visibility: visible;
+  opacity: 1;
+} 
+ /* email  */
 .ctn-email{
   display: flex;
   flex-direction: column;
@@ -162,13 +232,27 @@
 
 .input-email{
   font-family: var(--font-raleway);
-  background-color: var(--color-white);
+  background-color: #e6fbff;
+  font-weight: 600;
   width: 25vw;
   height: 8vh;
   color: var(--color-brown);
   font-size: 1.2vw;
   padding: 1vh 1vw;
   border: solid 1px var(--color-brown);
+}
+.input-email::placeholder{
+  color: var(--color-brown);
+  background-color: var(--color-white);	
+  font-size: 1vw;
+  font-family: var(--font-raleway);
+}
+.input-email:invalid{
+  color: var(--color-brown);
+  background-color: var(--color-white);	
+  font-size: 1vw;
+  font-family: var(--font-raleway);
+  border-color: #f00;
 }
 #btn-sign{
   text-decoration: none;
