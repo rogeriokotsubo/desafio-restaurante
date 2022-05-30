@@ -6,15 +6,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 130vh;
+  height: 142vh;
   background-color: transparent;
   padding-top: 70vh;
 }
 .ctn-cake-bar{
   background-image: url(../assets/img/fundo1.png);
-  background-size: contain;
+  /* background-size: contain; */
   width: 90vw;
-  height: 108px;
+  height: 120px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -32,14 +32,14 @@
 
 #ctn-img-cakes{
   width: 90vw;
-  height: 50vh;
+  height: 55vh;
   display: flex;
   justify-content: space-between;
   padding-top: 3vh;
 }
 .cakes-image1 {
   width: 44vw;
-  height: 45vh;
+  height: 50vh;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -75,7 +75,7 @@
 /* Donnuts img */
 .cakes-image2{
   width: 44vw;
-  height: 45vh;
+  height: 50vh;
   display: flex;
   justify-content: end;
   align-items: end;
